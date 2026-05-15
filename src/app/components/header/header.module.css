@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 32px;
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(16px);
+    border-radius: 80px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .header:hover {
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 12px 28px rgba(56, 189, 248, 0.15);
+  }
+  .brandArea h1 {
+    font-size: 26px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #38bdf8, #f472b6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+    letter-spacing: -0.5px;
+    transition: transform 0.2s ease;
+  }
+  
+  .brandArea h1:hover {
+    transform: scale(1.02);
+  }
+  .navMenu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navMenu li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    padding: 8px 0;
+  }
+  
+  .navMenu li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #38bdf8, #f472b6);
+    transition: width 0.3s ease;
+  }
+  
+  .navMenu li:hover::after {
+    width: 100%;
+  }
+  
+  .navMenu li:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+  }
+  
+  .userInfo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .phone {
+    color: #fbbf24;
+    font-weight: 600;
+    background: rgba(251, 191, 36, 0.12);
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    transition: all 0.2s;
+  }
+  
+  .phone:hover {
+    background: rgba(251, 191, 36, 0.25);
+    border-color: #fbbf24;
+    transform: translateY(-1px);
+  }
+  
+  .account {
+    color: #38bdf8;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 40px;
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    transition: all 0.2s;
+  }
+  
+  .account:hover {
+    background: rgba(56, 189, 248, 0.2);
+    color: #ffffff;
+    border-color: #38bdf8;
+    transform: translateY(-1px);
+  }

@@ -1,0 +1,43 @@
+/* Đường dẫn: src/components/slider/slider.module.css */
+.sliderWrapper {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #000;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 480px; /* Độ cao slider */
+}
+
+/* Tùy chỉnh màu sắc cho các chấm tròn bên dưới của react-slick */
+:global(.slick-dots) {
+    bottom: 20px;
+}
+
+:global(.slick-dots li button:before) {
+    color: white !important;
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+:global(.slick-dots li.slick-active button:before) {
+    color: #38bdf8 !important;
+    opacity: 1;
+}
+
+/* Tùy chỉnh mũi tên */
+:global(.slick-prev), :global(.slick-next) {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+:global(.slick-prev) { left: 15px; }
+:global(.slick-next) { right: 15px; }
+
+@media (max-width: 700px) {
+    .imageContainer { height: 300px; }
+}
