@@ -31,7 +31,7 @@ export function Footer() { // Phải có export function
           </div>
         </div>
         <div className={styles.footerBottom}>
-          <p>© 2026 Nhà Hàng Online</p>
+          <p>© 2026 Nhà Hàng Online / Dự án báo cáo</p>
         </div>
       </footer>
     );
